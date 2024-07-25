@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registrarse - Librería Don Carter</title>
+    <link rel="stylesheet" href="../style/auth.css">
+</head>
+<body>
+    <div class="container">
+        <header class="xd">
+            <img src="../style/logo.png" alt="Logo" width="80px" style="margin-bottom: 10px;">
+            <h1 style="margin: 0;">Librería Don Carter</h1>
+            <h2 id="form-title" style="margin: 0;">Iniciar Sesión</h2>
+        </header>
+        <main>
+            <section>
+                <form id="formulario-login-register">
+                    <!-- Sección de campos para registro -->
+                    <div id="register-fields" style="display: none;">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </div>
+                    
+                    <!-- Campos comunes para iniciar sesión -->
+                    <label for="username">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" id="submit-button">Ingresar</button>
+                </form>
+                <div class="toggle-link" id="toggle-link">¿No tienes una cuenta? Regístrate</div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="../src/js/auth.js"></script>
+</body>
+</html>
